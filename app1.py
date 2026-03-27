@@ -60,7 +60,7 @@ input = pd.concat([data.reset_index(drop=True),df],axis=1)
 
 scaled_data=scaler.transform(input.values
                              )
-
+st.write('probability is :',prediction_prob)
 prediction=model.predict(scaled_data)
 prediction_prob=prediction[0][0]
 
